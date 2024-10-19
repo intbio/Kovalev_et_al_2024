@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="js/datatables.min.css"/> 
+    
+	
+  </head>
+<body>
+ 
+<script src="js/datatables.min.js"></script>
+<script src="js/papaparse.min.js"></script>
+
+<H3>Interactive table of all-atom MD simulation studies of nucleosomes.</H3>
+<a href='https://intbio.org/Fedulova_et_al_2024/'>Back</a>
+<table id="main" class="display" style="width:100%">
+</table>
+
+<style>
+/* a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  margin: -2em;
+}     */
+.tooltip {
+  text-decoration:none;
+  position:relative;
+  padding: 1em;
+  margin: -1em;
+}
+ 
+.tooltip span {
+  display:none;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  color:black;
+  background:white; 
+
+}
+ 
+.tooltip span img {
+  float:left;
+  margin:0px 8px 8px 0;
+    
+}
+ 
+.tooltip:hover span {
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1000;
+  width:auto;
+  max-width:450px;
+  max-height:450px;
+  min-height:128px;
+  border:1px solid black;
+  margin-top:12px;
+  margin-left:100px;
+  overflow:hidden;
+  padding:8px;
+  opacity: 0.9;  
+}
+    </body>
+</style>
+
+
+<script>
+$(function() {
+      Papa.parse("data/paper_table - MD.csv", {
+          download: true,
+          complete: function(d) {
+          $(document).ready(function () {
+              $('#main').DataTable({
+                    data: d.data.slice(1),
+                    dataSrc:"",
+                    "paging": false,
+                    "searching": false,
+                    order: [[2, 'asc']],
+                    columns: [
+                        {title: "Article title"},
+                        {title: "Authors"},
+                        {title: "Year"},
+                        {title: "DOI link"},
+                        {title: "Graph.Abstract link"},
+                        {title: "Model"},
+                        {title: "PDB IDs"},
+                        {title: "DNA sequence"},
+                        {title: "Variations/ modifications/ interaction"},
+                        {title: "Method"},
+                        {title: "Solvent/Water model"},
+                        {title: "Ion concentration"},                        
+                        {title: "Force field"},
+                        {title: "Trajectory times, μs"},
+                        {title: "Available trajectory files"},
+                        {title: "Main findings"},
+                    ],
+                    "rowReorder": false,
+                    "columnDefs": [ 
+                        { "targets": '_all', "defaultContent": ""},
+                        { orderable: true, className: 'reorder', targets: [2] },
+                        { orderable: false, targets: '_all' },                    
+                        {
+                            targets: 0,
+                            render: function (data, type, row, meta)
+                            {
+                                if (type === 'display')
+                                    data = "<a class='tooltip' href='" + row[3] + "' target='_blank'>" + data +
+                                           "<span><img src='" + row[4] + "' style='max-height: 450px; max-width: 450px;'></span></a>";
+                          
+                                return data;
+                            }
+                        },
+                        {
+                            targets: 14,
+                            render: function (data, type, row, meta)
+                            {
+                                if (type === 'display') {
+                                    
+                                    if (data === '-') {
+                                        data = 'No';
+                                    } else {
+                                        data = "<a href='" + data + "' target='_blank'> Yes </a>";
+                                    };
+                                };
+                                return data;
+                            }
+                        },
+                        {
+                            targets: 6,
+                            render: function (data, type, row, meta)
+                            {
+                                if (type === 'display') {
+                                    let d = '';
+                                    data.split(',').forEach( (el) => {
+                                        el = el.trim();
+                                        if (el.length == 4) {
+                                            d = d+ "<a class='tooltip' href='https://www.rcsb.org/structure/" + el + "' target='_blank'>" + el  +
+                                           "<br><span><img src='https://cdn.rcsb.org/images/structures/" + el.toLowerCase() + "_assembly-1.jpeg' style='max-height: 450px; max-width: 450px;'></span></a>";
+
+                                        } else {
+                                            d = d+el;
+                                        }
+                                        
+                                    })
+                                        data=d;
+                                        // data = "<a href='" + data + "' target='_blank'> Yes </a>";
+                                };
+                                return data;
+                            }
+                        },
+                        
+                        {
+							"targets": [3,4],
+							"visible": false,
+							"searchable": true
+						},
+                        
+                    ],                 
+                  
+                  
+                  
+              });
+          });
+          }
+      });
+  });
+    
+</script>
+</body>
+</html>
