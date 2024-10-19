@@ -1,10 +1,10 @@
 # Fedulova_et_al_2024
 
-[![DOI](https://doi.org/10.1002/wcms.1728)
+[![DOI]()
 
 This repository contains supplementary data for 
-"Molecular dynamics simulations of nucleosomes are coming of age" by Fedulova et al.
+"Epigenome Engineering Using dCas-systems for Biomedical Applications and Biotechnology: Current Achievements, Opportunities and Challenges" by Kovalev et al.
 
-The best way to view it is to use the interactive web site rendered through GitHub pages from this repository at http://intbio.github.io/Fedulova_et_al_2024/
+The best way to view it is to use the interactive web site rendered through GitHub pages from this repository at http://intbio.github.io/Kovalev_et_al_2024/
 
 
