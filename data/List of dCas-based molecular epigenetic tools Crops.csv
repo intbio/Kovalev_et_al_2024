@@ -1,0 +1,56 @@
+Name,Effector construct,Effector type,dCas protein,Architecture,Action,References ,DOI link,Organism (in vivo)
+,VP64,noncatalytic,dSpCas9,,activation,"Marta Vazquez-Vilar, et al. A modular toolbox for gRNA–Cas9 genome engineering in plants based on the GoldenBraid standard. (2016)",https://doi.org/10.1186/s13007-016-0101-2,"Arabidopsis thaliana
+N. benthamiana
+Oryza sativa
+Z. mays
+"
+,EDLL,noncatalytic,dSpCas9,,activation,"Marta Vazquez-Vilar, et al. A modular toolbox for gRNA–Cas9 genome engineering in plants based on the GoldenBraid standard. (2016)",https://doi.org/10.1186/s13007-016-0101-2,N.  benthamiana
+,SRDX,noncatalytic,dSpCas9,,repression,"Marta Vazquez-Vilar, et al. A modular toolbox for gRNA–Cas9 genome engineering in plants based on the GoldenBraid standard. (2016)",https://doi.org/10.1186/s13007-016-0101-2,N.  benthamiana
+,3X(SRDX),noncatalytic,dSpCas10,,repression,"Levi G. Lowder, et al. A CRISPR/Cas9 Toolbox for Multiplexed Plant Genome Editing and Transcriptional Regulation (2015)",https://doi.org/10.1104/pp.15.00636,Arabidopsis thaliana
+,BRD,noncatalytic,dSpCas9,,repression,"Marta Vazquez-Vilar, et al. A modular toolbox for gRNA–Cas9 genome engineering in plants based on the GoldenBraid standard. (2016)",https://doi.org/10.1186/s13007-016-0101-2,N.  benthamiana
+,TAL,noncatalytic,dSpCas9,,,"Agnieszka Piatek, et al. RNA-guided transcriptional regulation in planta via synthetic dCas9-based transcription factors. (2014)",https://doi.org/10.1111/pbi.12284,N.  benthamiana
+TV,6TAL–VP128,noncatalytic,dSpCas9,dCas9–TV,activation,"Zhenxiang Li, et al. A potent Cas9-derived gene activator for plant and mammalian cells. (2017)",https://doi.org/10.1038/s41477-017-0046-0,"Arabidopsis thaliana
+Oryza sativa"
+,4EE–VP128,noncatalytic,dSpCas9,dCas9–TV,activation,"Zhenxiang Li, et al. A potent Cas9-derived gene activator for plant and mammalian cells. (2017)",https://doi.org/10.1038/s41477-017-0046-0,"Arabidopsis thaliana
+Oryza sativa"
+,MCP-4EE-VP128,noncatalytic,dSpCas9,SAM-like?,activation,"Zhenxiang Li, et al. A potent Cas9-derived gene activator for plant and mammalian cells. (2017)",https://doi.org/10.1038/s41477-017-0046-0,Arabidopsis thaliana
+,MCP-TV,noncatalytic,dSpCas9,SAM-like?,activation,"Zhenxiang Li, et al. A potent Cas9-derived gene activator for plant and mammalian cells. (2017)",https://doi.org/10.1038/s41477-017-0046-0,Arabidopsis thaliana
+,P300,catalytic,dSpCas9,,"Histone acetylation (activation)
+H3K27","Joaquin Felipe Roca Paixão, et al. Improved drought stress tolerance in Arabidopsis by CRISPR/dCas9 fusion with a Histone AcetylTransferase. (2019)",https://doi.org/10.1038/s41598-019-44571-y,Arabidopsis thaliana
+,"VP64 +
+MCP-P65-HSF1",noncatalytic,dSpCas9,SAM-like?,activation,"Jong-Jin Park, et al. RNA-guided transcriptional activation via CRISPR/dCas9 mimics overexpression phenotypes in Arabidopsis. (2017)",https://doi.org/10.1371/journal.pone.0179410,Arabidopsis thaliana
+CRISPRAct2.0,"VP64 +
+MCP-VP64",noncatalytic,dSpCas9,SAM-like?,activation,"Levi G. Lowder, et al. Robust Transcriptional Activation in Plants Using Multiplexed CRISPR-Act2.0 and mTALE-Act Systems. (2018)",https://doi.org/10.1016/j.molp.2017.11.010,Arabidopsis thaliana
+,"VP64 +
+MCP-EDLL",noncatalytic,dSpCas9,SAM-like?,activation,"Levi G. Lowder, et al. Robust Transcriptional Activation in Plants Using Multiplexed CRISPR-Act2.0 and mTALE-Act Systems. (2018)",https://doi.org/10.1016/j.molp.2017.11.010,Arabidopsis thaliana
+,"VP64 + 
+MCP-VPR",noncatalytic,dSpCas9,scRNA,activation,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6686126/,,Arabidopsis thaliana
+,MCP-VP64,noncatalytic,dSpCas9,?,activation,"Joanne E. Lee, et al. CRISPR-based tools for targeted transcriptional and epigenetic regulation in plants. (2019)",https://doi.org/10.1371/journal.pone.0222778,Arabidopsis thaliana
+dCasEV2.1,"EDLL+
+MCP-VPR",noncatalytic,dSpCas9,SAM-like?,activation,"Sara Selma, et al. Strong gene activation in plants with genome-wide specificity using a new orthogonal CRISPR/Cas9-based programmable transcriptional activator. (2019)",https://doi.org/10.1111/pbi.13138,N.  benthamiana
+,MCP-P300,catalytic,dSpCas9,?,"Histone acetylation (activation)
+H3K27","Joanne E. Lee, et al. CRISPR-based tools for targeted transcriptional and epigenetic regulation in plants. (2019)",https://doi.org/10.1371/journal.pone.0222778,Arabidopsis thaliana
+,MCP-KYP,catalytic,dSpCas9,?,Histone metilation H3K9,"Joanne E. Lee, et al. CRISPR-based tools for targeted transcriptional and epigenetic regulation in plants. (2019)",https://doi.org/10.1371/journal.pone.0222778,Arabidopsis thaliana
+,MCP-SRDX,noncatalytic,dSpCas9,?,repression,"Joanne E. Lee, et al. CRISPR-based tools for targeted transcriptional and epigenetic regulation in plants. (2019)",https://doi.org/10.1371/journal.pone.0222778,Arabidopsis thaliana
+,MCP-G9a,catalytic,dSpCas9,?,Histone metilation H3K9,"Joanne E. Lee, et al. CRISPR-based tools for targeted transcriptional and epigenetic regulation in plants. (2019)",https://doi.org/10.1371/journal.pone.0222778,Arabidopsis thaliana
+,ScFV-TET1,catalytic,dSpCas9,SunTag,"DNA
+demetilation","Javier Gallego-Bartolomé, et al. Targeted DNA demethylation of the Arabidopsis genome using the human TET1 catalytic domain. (2018)",https://doi.org/10.1073/pnas.1716945115,Arabidopsis thaliana
+,ScFV-VP64,noncatalytic,dCas9,SunTag,activation,"Ashot Papikian, et al. Site-specific manipulation of Arabidopsis loci using CRISPR-Cas9 SunTag systems. (2019)",https://doi.org/10.1038/s41467-019-08736-7,Arabidopsis thaliana
+,ScFV-NtDRM,catalytic,dCas9,SunTag,"DNA
+demetilation","Ashot Papikian, et al. Site-specific manipulation of Arabidopsis loci using CRISPR-Cas9 SunTag systems. (2019)",https://doi.org/10.1038/s41467-019-08736-7,Arabidopsis thaliana
+,SRDX,noncatalytic,"dCas12a
+(LbCpf1 и dAsCpf1)",Direct fusion (С),repression,"Xu Tang, et al. A CRISPR–Cpf1 system for efficient genome editing and transcriptional repression in plants. (2017)",https://doi.org/10.1038/nplants.2017.18,Arabidopsis thaliana
+TV,6TAL–VP128,noncatalytic,dFnCas12a,Direct fusion (С),activation,"Meiling Ming, et al. CRISPR–Cas12b enables efficient plant genome engineering. (2020)",https://doi.org/10.1038/s41477-020-0614-6,Oryza sativa
+TV,6TAL–VP128,noncatalytic,dAaCas12b,Direct fusion (С),activation,"Meiling Ming, et al. CRISPR–Cas12b enables efficient plant genome engineering. (2020)",https://doi.org/10.1038/s41477-020-0614-6,Oryza sativa
+,"TV + 
+MCP-TV",noncatalytic,dAaCas12b,SAM-like?,activation,"Meiling Ming, et al. CRISPR–Cas12b enables efficient plant genome engineering. (2020)",https://doi.org/10.1038/s41477-020-0614-6,Oryza sativa
+,"TV + 
+MCP-VPR",noncatalytic,dAaCas12b,SAM-like?,activation,"Meiling Ming, et al. CRISPR–Cas12b enables efficient plant genome engineering. (2020)",https://doi.org/10.1038/s41477-020-0614-6,Oryza sativa
+CRISPR-Act3.0 gR2.0, 4xGCN4,noncatalytic,dSpCas9,CRISPR-Act3.0,activation,"Changtian Pan, et al. CRISPR–Act3.0 for highly efficient multiplexed gene activation in plants. (2021)",https://doi.org/10.1038/s41477-021-00953-7,Oryza sativa
+CRISPR-Act3.0 gR2.0,10xGCN4,noncatalytic,dSpCas9,CRISPR-Act3.0,activation,"Changtian Pan, et al. CRISPR–Act3.0 for highly efficient multiplexed gene activation in plants. (2021)",https://doi.org/10.1038/s41477-021-00953-7,Oryza sativa
+CRISPR-Act3.0 gR2.0,"Vp64+
+MCP- 10xGCN4-2TAD",noncatalytic,"dzCas9-Act3.0, 
+dzCas9-NG-Act3.0 
+dSpRy-Act3.0",M-Act3.0,activation,"Changtian Pan, et al. CRISPR–Act3.0 for highly efficient multiplexed gene activation in plants. (2021)",https://doi.org/10.1038/s41477-021-00953-7,Oryza sativa
+,TEN,,,,,https://academic.oup.com/plphys/article/195/3/1748/7642925,,
+,dCas9-N,,,,,,,
