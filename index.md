@@ -6,7 +6,8 @@
 [https://github.com/intbio/Kovalev_et_al_2024](https://github.com/intbio/Kovalev_et_al_2024)
 
 ### Interactive materials
-- [Interactive table of dCas-based molecular epigenetic tools](dCas_tools_table)
+- [Interactive table of dCas-based molecular epigenetic tools for Agricultural biotechnology](dCas_tools_table)
+
 
 
 
