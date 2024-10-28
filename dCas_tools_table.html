@@ -14,7 +14,7 @@
 <script src="js/papaparse.min.js"></script>
 
 <H3>Interactive table of all-atom MD simulations studies of nucleosomes.</H3>
-<a href='https://intbio.org/Fedulova_et_al_2024/'>Back</a>
+<a href='https://intbio.org/Kovalev_et_al_2024/'>Back</a>
 <table id="main" class="display" style="width:100%">
 </table>
 
@@ -72,7 +72,7 @@
 
 <script>
 $(function() {
-      Papa.parse("data/paper_table - MD.csv", {
+      Papa.parse("data/List_of_dCas-based_molecular_epigenetic_tools_Crops.csv", {
           download: true,
           complete: function(d) {
           $(document).ready(function () {
@@ -83,22 +83,22 @@ $(function() {
                     "searching": false,
                     order: [[2, 'asc']],
                     columns: [
-                        {title: "Article title"},
-                        {title: "Authors"},
-                        {title: "Year"},
+                        {title: "Name"},
+                        {title: "Effector construct"},
+                        {title: "Effector type"},
+                        {title: "dCas protein"},
+                        {title: "Architecture"},
+                        {title: "Action"},
+                        {title: "References"},
                         {title: "DOI link"},
-                        {title: "Graph.Abstract link"},
-                        {title: "Model"},
-                        {title: "PDB IDs"},
-                        {title: "DNA sequence"},
-                        {title: "Variations/ modifications/ interaction"},
-                        {title: "Method"},
-                        {title: "Solvent/Water model"},
-                        {title: "Ion concentration"},                        
-                        {title: "Force field"},
-                        {title: "Trajectory times, μs"},
-                        {title: "Available trajectory files"},
-                        {title: "Main findings"},
+                        {title: "Organism (in vivo)"},
+                        // {title: "Method"},
+                        // {title: "Solvent/Water model"},
+                        // {title: "Ion concentration"},                        
+                        // {title: "Force field"},
+                        // {title: "Trajectory times, μs"},
+                        // {title: "Available trajectory files"},
+                        // {title: "Main findings"},
                     ],
                     "rowReorder": false,
                     "columnDefs": [ 
